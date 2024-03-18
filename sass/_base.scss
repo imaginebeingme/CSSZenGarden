@@ -1,0 +1,39 @@
+@use "fonts";
+@use "_variables" as v;
+
+* {
+    box-sizing: border-box;
+    &::before, &::after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: v.$coolgray;
+    font: {
+        family: 'nt-epika';
+        weight: 400;
+        size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font: 600 8rem/1.5 'nt-epika', serif;
+}
+
+p {
+    margin-top: 0;
+    font: 400 1.75rem/2rem 'nt-epika', serif;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+} 
